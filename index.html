@@ -1,7 +1,6 @@
 <html>
   <head>
     <title>你好</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <link href="__ROOT__/public/css/news.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript">
       function changeImg()
@@ -39,7 +38,7 @@
 	      </div>
 	    </form>
 	    </div>
-	    <!-- 一个分类带两条新闻 -->
+	    <!-- 一个分类带两条热点 -->
 	    <foreach name="types" key="k" item="v">
 	    <div class="twoNews">
 	      <div class="twoNews1">&nbsp;<a href="__APP__/Types/index/typeId/{$v.typeId}" class="a">{$v.typeName}</a></div>
@@ -59,10 +58,10 @@
 	      [<a href="__APP__/Types/index/typeId/{$v.typeId}">{$v.typeName}</a>] <a href="__APP__/News/index/articleId/{$v.articleId}">{$v.title}</a>{$v.dateandtime}<img src="__ROOT__/images/new1.gif">
 	    </div>
 	    </foreach>
-	    <!-- 新闻分类导航 -->
-	    <div class="hotNews">新闻分类导航</div>
+	    <!-- 热点分类导航 -->
+	    <div class="hotNews">热点分类导航</div>
 	    <div class="newsDh">
-	      <div class="newsDh1"><span class="newsCount">新闻总数：</span></div>
+	      <div class="newsDh1"><span class="newsCount">热点总数：</span></div>
 	      <div class="newsDh2">{$totalnum}</div>
 	      <div class="newsDh3">&nbsp;</div>
 	    </div>
@@ -76,7 +75,7 @@
 	  </div>
 	</div>
     
-    
+   <div>123456</div> 
     <!-- 网页脚 -->
    <include file='Public:footer'/>
   </body>
